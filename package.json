@@ -1,0 +1,28 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev-server": "webpack serve --mode development",
+    "webpack": "webpack --watch --mode development",
+    "build": "webpack --mode production",
+    "build-babel": "babel src/index.js --out-file public/scripts/bundle.js --presets env --watch"
+  },
+  "dependencies": {
+    "@types/uuid": "^8.3.4",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "core-js": "^3.6.5",
+    "regenerator-runtime": "^0.13.5",
+    "uuid": "3.2.1",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.12",
+    "@babel/preset-env": "^7.17.12",
+    "babel-loader": "^8.2.5"
+  }
+}
